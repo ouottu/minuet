@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FLOOR MAP</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- 상단 헤더 -->
+    <header class="header">
+
+      <h1 class="logo">FLOOR MAP</h1>
+
+      <nav class="floor-buttons" aria-label="층 선택">
+
+        <button
+          class="floor-btn"
+          data-floor="b1"
+          aria-pressed="false">
+          B1
+        </button>
+
+        <button
+          class="floor-btn active"
+          data-floor="1f"
+          aria-pressed="true">
+          1F
+        </button>
+
+        <button
+          class="floor-btn"
+          data-floor="2f"
+          aria-pressed="false">
+          2F
+        </button>
+
+      </nav>
+
+    </header>
+
+
+    <!-- 메인 콘텐츠 -->
+    <section class="content">
+
+      <!-- 평면도 -->
+      <div class="map-card">
+
+        <div class="map-stage">
+
+          <img
+            id="floorImage"
+            src="images/floor-1f.png"
+            alt="1층 평면도">
+
+          <div id="svgLayer"></div>
+
+        </div>
+
+      </div>
+
+
+      <!-- 구역 정보 -->
+      <aside class="info-panel">
+
+        <h2 id="roomTitle">구역 이름</h2>
+
+        <p id="roomDescription">구역 설명</p>
+
+      </aside>
+
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

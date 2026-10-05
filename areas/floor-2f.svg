@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Room_Areas" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 2400 2100">
+  <!-- Generator: Adobe Illustrator 30.8.2, SVG Export Plug-In . SVG Version: 2.1.4 Build 7)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #ffd1cc;
+      }
+
+      .st1 {
+        fill: #d7d7d7;
+      }
+
+      .st2 {
+        fill: #a6a695;
+      }
+
+      .st3 {
+        fill: #c3c3da;
+      }
+
+      .st4 {
+        fill: #5f9ea0;
+      }
+
+      .st5 {
+        fill: #ffe699;
+      }
+
+      .st6 {
+        fill: #ed9b8d;
+      }
+
+      .st7 {
+        fill: #f4f4f4;
+      }
+
+      .st8 {
+        fill: #e6cfe0;
+      }
+    </style>
+  </defs>
+  <rect id="_x32_f_x5F_balcony" class="st2" x="183.16" y="274.65" width="99.5" height="372.77"/>
+  <polygon id="_x32_f_x5F_bedroom1" class="st0" points="733.79 274.65 543.81 274.65 486.19 274.65 295.85 274.65 295.85 647.43 543.81 647.43 543.81 532.06 733.79 532.06 733.79 274.65"/>
+  <rect id="_x32_f_x5F_bathroom1" class="st3" x="746.68" y="274.65" width="206.5" height="257.41"/>
+  <rect id="_x32_f_x5F_powder_x5F_room" class="st7" x="966.07" y="274.65" width="149.29" height="190.22"/>
+  <rect id="_x32_f_x5F_bathroom2" class="st3" x="1128.31" y="274.65" width="206.5" height="257.41"/>
+  <polygon id="_x32_f_x5F_bedroom2" class="st0" points="1347.75 274.65 1347.75 543.88 1270.64 543.88 1270.64 647.54 1845.16 647.54 1845.16 610.53 1845.16 543.88 1845.16 274.65 1347.75 274.65"/>
+  <polygon id="_x32_f_x5F_veranda1" class="st2" points="1857.1 274.65 1857.1 661.21 1563.04 661.21 1563.04 742.77 1857.1 742.77 1925.83 742.77 2106.19 742.77 2106.19 274.65 1857.1 274.65"/>
+  <polygon id="_x32_f_x5F_hallway" class="st5" points="698.61 1129.22 697.61 655.86 774.96 655.86 774.96 647.54 1258.7 647.54 1258.7 543.88 1115.36 543.88 1115.36 478.53 966.07 478.53 966.07 543.88 556.02 543.88 556.02 610.36 556.02 621.88 556.02 647.54 556.02 655.86 556.02 1078.04 556.02 1106.1 556.02 1206.91 556.02 1213.92 556.02 1230.91 556.63 1230.91 635.66 1361.19 637.43 1360.12 820.47 1360.12 820.47 1141.83 775.2 1141.95 775.2 1129.34 698.61 1129.22"/>
+  <rect id="_x32_f_x5F_stairs" class="st6" x="697.66" y="655.42" width="77.3" height="473.78"/>
+  <rect id="_x32_f_x5F_walk_x5F_in_x5F_closet1" class="st8" x="295.85" y="660.08" width="249.71" height="272.05"/>
+  <rect id="_x32_f_x5F_walk_x5F_in_x5F_closet2" class="st8" x="788.8" y="661" width="386.94" height="273.53"/>
+  <rect id="_x32_f_x5F_study" class="st1" x="295.85" y="944.78" width="249.71" height="274.75"/>
+  <polygon id="_x32_f_x5F_gym" class="st4" points="625.35 1367.93 625.35 1569.2 295.85 1569.2 295.85 1232.78 543.84 1232.78 625.35 1367.93"/>
+  <rect id="_x32_f_x5F_veranda2" class="st2" x="637.44" y="1372.62" width="182.58" height="196.57"/>
+</svg>

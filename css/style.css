@@ -1,0 +1,379 @@
+/* ==============================
+   기본 설정
+============================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #F3F4F6;
+  color: #252525;
+
+  font-family:
+    Arial,
+    "Noto Sans KR",
+    sans-serif;
+}
+
+
+/* ==============================
+   전체 페이지 너비
+============================== */
+
+.container {
+  width: 92%;
+  max-width: 1680px;
+
+  margin: 32px auto;
+}
+
+
+/* ==============================
+   상단 헤더
+============================== */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+.logo {
+  margin: 0;
+
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+
+/* ==============================
+   층 선택 버튼
+============================== */
+
+.floor-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.floor-btn {
+  min-width: 78px;
+  min-height: 54px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: #FFFFFF;
+  color: #555555;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.floor-btn:not(.active) {
+  background: #FFFFFF;
+  color: #555555;
+}
+
+.floor-btn:not(.active):hover {
+  background: #E5EFF9;
+}
+
+.floor-btn.active {
+  background: #3578E5;
+  color: #FFFFFF;
+}
+
+
+/* ==============================
+   메인 레이아웃
+============================== */
+
+.content {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+
+  gap: 24px;
+
+  align-items: stretch;
+}
+
+
+/* ==============================
+   평면도 카드
+============================== */
+
+.map-card {
+  min-width: 0;
+
+  background: #FFFFFF;
+
+  border: none;
+  border-radius: 28px;
+
+  padding: 28px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+
+/* 평면도 이미지와 SVG 영역 */
+
+.map-stage {
+  position: relative;
+
+  width: 100%;
+
+  line-height: 0;
+}
+
+
+/* 평면도 PNG */
+
+#floorImage {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+
+/* SVG 레이어 */
+
+#svgLayer {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 2;
+
+  pointer-events: auto;
+}
+
+#svgLayer svg {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: visible;
+
+  pointer-events: auto;
+}
+
+
+/* ==============================
+   SVG 구역 기본 상태
+============================== */
+
+#svgLayer .room,
+#svgLayer .room * {
+  fill: transparent !important;
+  fill-opacity: 0 !important;
+
+  stroke: none !important;
+  stroke-width: 0 !important;
+  stroke-opacity: 0 !important;
+
+  outline: none !important;
+
+  cursor: pointer;
+  pointer-events: all;
+
+  transition:
+    fill 0.15s ease,
+    fill-opacity 0.15s ease;
+}
+
+
+/* ==============================
+   마우스오버 상태
+============================== */
+
+#svgLayer .room.is-hovered,
+#svgLayer .room.is-hovered * {
+  fill: #3578E5 !important;
+  fill-opacity: 0.6 !important;
+
+  stroke: none !important;
+  stroke-width: 0 !important;
+  stroke-opacity: 0 !important;
+
+  outline: none !important;
+}
+
+
+/* ==============================
+   선택된 구역
+============================== */
+
+#svgLayer .room.selected,
+#svgLayer .room.selected * {
+  fill: #3578E5 !important;
+  fill-opacity: 0.6 !important;
+
+  stroke: none !important;
+  stroke-width: 0 !important;
+  stroke-opacity: 0 !important;
+
+  outline: none !important;
+}
+
+
+/* SVG 포커스 테두리 제거 */
+
+#svgLayer .room:focus,
+#svgLayer .room:focus-visible {
+  outline: none !important;
+}
+
+
+/* ==============================
+   구역 정보 패널
+============================== */
+
+.info-panel {
+  min-width: 0;
+
+  background: #FFFFFF;
+
+  border: none;
+  border-radius: 28px;
+
+  padding: 44px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  text-align: left;
+
+  align-self: stretch;
+}
+
+
+/* 구역 이름 */
+
+#roomTitle {
+  margin: 0 0 10px;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  text-align: left;
+
+  word-break: keep-all;
+}
+
+
+/* 구역 설명 */
+
+#roomDescription {
+  margin: 0;
+
+  color: #666666;
+
+  font-size: 18px;
+  line-height: 1.9;
+
+  text-align: left;
+
+  white-space: pre-line;
+  word-break: keep-all;
+}
+
+
+/* ==============================
+   태블릿 반응형
+============================== */
+
+@media (max-width: 900px) {
+
+  .container {
+    width: calc(100% - 40px);
+    margin: 24px auto;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .info-panel {
+    min-height: 220px;
+    padding: 30px;
+  }
+
+}
+
+
+/* ==============================
+   모바일 반응형
+============================== */
+
+@media (max-width: 480px) {
+
+  .container {
+    width: calc(100% - 28px);
+    margin: 20px auto;
+  }
+
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .floor-btn {
+    min-width: 68px;
+    min-height: 46px;
+
+    font-size: 16px;
+  }
+
+  .map-card {
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .info-panel {
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  #roomTitle {
+    font-size: 28px;
+  }
+
+  #roomDescription {
+    font-size: 18px;
+  }
+
+}

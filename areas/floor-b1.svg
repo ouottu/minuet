@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Room_Areas" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 2400 2100">
+  <!-- Generator: Adobe Illustrator 30.8.2, SVG Export Plug-In . SVG Version: 2.1.4 Build 7)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #c3c3da;
+      }
+
+      .st1 {
+        fill: #ffe699;
+      }
+
+      .st2 {
+        fill: #90ddcd;
+      }
+
+      .st3 {
+        fill: #999;
+      }
+
+      .st4 {
+        fill: #ed9b8d;
+      }
+
+      .st5 {
+        fill: #ccb799;
+      }
+    </style>
+  </defs>
+  <rect id="b1_x5F_wine_x5F_cellar" class="st5" x="294.66" y="275.07" width="319.72" height="256.63"/>
+  <rect id="b1_x5F_stairs" class="st4" x="626.5" y="275.07" width="149.7" height="256.63"/>
+  <rect id="b1_x5F_boiler_x5F_room" class="st3" x="786.9" y="274" width="140.08" height="257.7"/>
+  <rect id="b1_x5F_bathroom" class="st0" x="937.67" y="274" width="151.96" height="151.96"/>
+  <polygon id="b1_x5F_hallway" class="st1" points="937.67 437.53 937.67 544.53 294.66 544.53 294.66 647.43 1089.63 647.43 1089.63 588.5 1089.63 544.53 1089.63 437.53 937.67 437.53"/>
+  <rect id="b1_x5F_guest_x5F_room" class="st2" x="1100.33" y="274" width="521.82" height="373.43"/>
+</svg>
